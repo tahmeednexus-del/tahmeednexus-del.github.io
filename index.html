@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact – Nexus Technologies</title>
+    <title>Nexus Technologies – Contact & Tech Hub</title>
 
     <style>
         body {
             margin: 0;
+            background: #0d0d0d;
             font-family: Arial, sans-serif;
-            background: #0e0e0e;
             color: #fff;
-            line-height: 1.6;
         }
 
+        /* HEADER */
         header {
-            background: #111;
+            background: rgba(20, 20, 20, 0.95);
+            backdrop-filter: blur(10px);
             padding: 20px;
             text-align: center;
-            border-bottom: 2px solid #222;
+            border-bottom: 1px solid #111;
             position: sticky;
             top: 0;
-            z-index: 10;
         }
 
         header h1 {
+            color: #00aaff;
             margin: 0;
-            font-size: 30px;
-            color: #0af;
-            letter-spacing: 1px;
+            font-size: 32px;
             font-weight: bold;
         }
 
@@ -37,56 +36,60 @@
         }
 
         nav a {
-            color: #ccc;
-            margin: 0 15px;
             text-decoration: none;
+            margin: 0 15px;
+            color: #ccc;
             font-size: 17px;
             transition: 0.3s;
-            font-weight: 500;
         }
 
         nav a:hover {
-            color: #0af;
-            text-shadow: 0 0 8px #0af;
+            color: #00aaff;
+            text-shadow: 0 0 10px #00aaff;
         }
 
+        /* CONTAINER */
         .container {
-            max-width: 850px;
-            margin: 50px auto;
-            background: #151515;
-            padding: 35px;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* CARD STYLE */
+        .card {
+            background: rgba(25, 25, 25, 0.7);
+            border: 1px solid #333;
             border-radius: 12px;
-            border: 1px solid #222;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            border-color: #00aaff;
         }
 
         h2 {
-            color: #0af;
-            margin-bottom: 20px;
-            font-size: 26px;
+            color: #00aaff;
+            margin-bottom: 15px;
         }
 
-        .info-box {
-            margin-bottom: 30px;
-        }
-
-        .contact-item {
-            margin-bottom: 18px;
-            font-size: 18px;
-        }
-
-        a.contact-link {
-            color: #0af;
+        /* LINKS */
+        a.tech-link {
+            color: #00aaff;
             text-decoration: none;
             font-weight: bold;
             transition: 0.2s;
         }
 
-        a.contact-link:hover {
+        a.tech-link:hover {
             text-decoration: underline;
-            text-shadow: 0 0 6px #0af;
+            text-shadow: 0 0 6px #00aaff;
         }
 
+        /* WHATSAPP BUTTON */
         .btn-whatsapp {
             display: inline-block;
             background: #25d366;
@@ -94,8 +97,8 @@
             padding: 14px 22px;
             border-radius: 10px;
             font-size: 19px;
-            text-decoration: none;
             font-weight: bold;
+            text-decoration: none;
             transition: 0.2s;
         }
 
@@ -104,19 +107,20 @@
             transform: scale(1.05);
         }
 
+        /* FOOTER */
         footer {
             text-align: center;
-            color: #888;
-            padding: 35px 0;
-            margin-top: 60px;
+            color: #777;
+            margin-top: 50px;
+            padding: 30px 0;
             border-top: 1px solid #222;
-            font-size: 14px;
         }
     </style>
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <h1>Nexus Technologies</h1>
         <nav>
@@ -126,65 +130,65 @@
         </nav>
     </header>
 
+    <!-- PAGE CONTENT -->
     <div class="container">
-        <h2>Contact Us</h2>
 
-        <div class="info-box">
-            <div class="contact-item"><b>Email:</b> 
-                <a class="contact-link" href="mailto:tahmeednexus@gmail.com">
-                    tahmeednexus@gmail.com
-                </a>
-            </div>
+        <!-- CONTACT CARD -->
+        <div class="card">
+            <h2>Contact Us</h2>
 
-            <div class="contact-item"><b>WhatsApp:</b> 
-                <a class="contact-link" href="https://wa.me/256750289753" target="_blank">
+            <p><b>Email:</b>
+                <a class="tech-link" href="mailto:tahmeednexus@gmail.com">
+                tahmeednexus@gmail.com</a>
+            </p>
+
+            <p><b>WhatsApp:</b>
+                <a class="tech-link" href="https://wa.me/256750289753" target="_blank">
                     +256 750 289 753
                 </a>
-            </div>
+            </p>
+
+            <a class="btn-whatsapp" href="https://wa.me/256750289753" target="_blank">
+                💬 Chat on WhatsApp
+            </a>
         </div>
 
-        <a class="btn-whatsapp" href="https://wa.me/256750289753" target="_blank">
-            💬 Chat on WhatsApp
-        </a>
-
-        <div class="info-box">
-            <h2>Tech Resources</h2>
-            <p>Here are useful links and tools to help you learn and grow in tech:</p>
-            <ul style="margin-left:20px; line-height:1.8;">
-                <li><a class="contact-link" href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp – Learn coding for free</a></li>
-                <li><a class="contact-link" href="https://www.codecademy.com/" target="_blank">Codecademy – Interactive coding lessons</a></li>
-                <li><a class="contact-link" href="https://www.geeksforgeeks.org/" target="_blank">GeeksForGeeks – Coding explanations & interview prep</a></li>
-                <li><a class="contact-link" href="https://roadmap.sh" target="_blank">Roadmap.sh – Developer roadmaps</a></li>
-                <li><a class="contact-link" href="https://github.com/" target="_blank">GitHub – Host your projects</a></li>
+        <!-- TECH LEARNING RESOURCES -->
+        <div class="card">
+            <h2>Best Free Tech Learning Resources</h2>
+            <ul>
+                <li><a class="tech-link" href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp – Learn coding for free</a></li>
+                <li><a class="tech-link" href="https://www.codecademy.com/" target="_blank">Codecademy – Interactive learning</a></li>
+                <li><a class="tech-link" href="https://roadmap.sh" target="_blank">Roadmap.sh – Tech career roadmaps</a></li>
+                <li><a class="tech-link" href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">MDN Web Docs – Pro-level tutorials</a></li>
             </ul>
         </div>
 
-        <div class="info-box">
-            <h2>Start Learning Tech</h2>
-            <p>Kickstart your tech journey with beginner-friendly guides:</p>
-            <ul style="margin-left:20px; line-height:1.8;">
-                <li><a class="contact-link" href="https://www.w3schools.com/html/" target="_blank">Learn HTML – Build your first webpage</a></li>
-                <li><a class="contact-link" href="https://www.w3schools.com/css/" target="_blank">Learn CSS – Style websites</a></li>
-                <li><a class="contact-link" href="https://www.javascript.info/" target="_blank">Learn JavaScript – Add interactivity</a></li>
-                <li><a class="contact-link" href="https://www.python.org/about/gettingstarted/" target="_blank">Learn Python – Great for beginners</a></li>
-                <li><a class="contact-link" href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">MDN Web Docs – Pro tutorials</a></li>
+        <!-- BEGINNER STARTER KIT -->
+        <div class="card">
+            <h2>Start Learning Tech (Beginner Friendly)</h2>
+            <ul>
+                <li><a class="tech-link" href="https://www.w3schools.com/html/" target="_blank">Learn HTML</a></li>
+                <li><a class="tech-link" href="https://www.w3schools.com/css/" target="_blank">Learn CSS</a></li>
+                <li><a class="tech-link" href="https://www.javascript.info/" target="_blank">Learn JavaScript</a></li>
+                <li><a class="tech-link" href="https://python.org" target="_blank">Learn Python</a></li>
             </ul>
         </div>
 
-        <div class="info-box">
-            <h2>Build Skills Fast</h2>
-            <p>Use these free tools to practice and grow:</p>
-            <ul style="margin-left:20px; line-height:1.8;">
-                <li><a class="contact-link" href="https://replit.com/" target="_blank">Replit – Code in browser</a></li>
-                <li><a class="contact-link" href="https://codepen.io/" target="_blank">CodePen – Test HTML/CSS/JS</a></li>
-                <li><a class="contact-link" href="https://www.hackerrank.com/" target="_blank">HackerRank – Coding challenges</a></li>
-                <li><a class="contact-link" href="https://exercism.org/" target="_blank">Exercism – Mentor-guided learning</a></li>
-                <li><a class="contact-link" href="https://stackoverflow.com/" target="_blank">StackOverflow – Developer Q&A</a></li>
+        <!-- SKILL-BUILDING TOOLS -->
+        <div class="card">
+            <h2>Practice & Build Your Skills</h2>
+            <ul>
+                <li><a class="tech-link" href="https://replit.com/" target="_blank">Replit – Online coding environment</a></li>
+                <li><a class="tech-link" href="https://codepen.io/" target="_blank">CodePen – Test UI/Frontend</a></li>
+                <li><a class="tech-link" href="https://hackerrank.com/" target="_blank">HackerRank – Challenges</a></li>
+                <li><a class="tech-link" href="https://stackoverflow.com/" target="_blank">StackOverflow – Developer Q&A</a></li>
             </ul>
         </div>
 
     </div>
 
+    <!-- FOOTER -->
     <footer>
         © 2025 Nexus Technologies. All rights reserved.
     </footer>
